@@ -29,7 +29,7 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
   </p>
 
   - Where have you seen a parallel circuit before? (christmas lights, etc)
-  - Diagram on how energy flows
+  - Diagram on [how energy flows](https://proquest.safaribooksonline.com/book/electrical-engineering/9781449336769/firstchapter#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE0NDkzMzY3NjklMkZfY2lyY3VpdF9iYXNpY3NfaHRtbCZxdWVyeT0=)
   - What is ground?
     - ground is the reference point in an electrical circuit from which voltages are measured, a common return path for             electric current
     - What is VBATT, 3.3V = current flow places
