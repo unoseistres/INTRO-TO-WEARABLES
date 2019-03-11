@@ -23,6 +23,11 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
   </p>
 
   - One LED light up switch
+
+  <p align="center"> 
+  <img src="https://github.com/unoseistres/INTRO-TO-WEARABLES/blob/master/images/arduino%20switch.gif" width="400">
+  </p>
+
   - Where have you seen a parallel circuit before? (christmas lights, etc)
   - Diagram on how energy flows
   - What is ground?
