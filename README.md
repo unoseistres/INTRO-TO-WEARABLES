@@ -19,13 +19,14 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
   <img src="https://github.com/unoseistres/INTRO-TO-WEARABLES/blob/master/images/LED%20switch%20circuit.jpg" width="600">
   </p>
 
-    - One LED light up switch
-    - Where have you seen a parallel circuit before? (christmas lights, etc)
-    - Diagram on how energy flows
-    - What is ground?
-      - ground is the reference point in an electrical circuit from which voltages are measured, a common return path for             electric current
-      - What is VBATT, 3.3V = current flow places
-      - Rest are digital pins 
+  - One LED light up switch
+  - Where have you seen a parallel circuit before? (christmas lights, etc)
+  - Diagram on how energy flows
+  - What is ground?
+    - ground is the reference point in an electrical circuit from which voltages are measured, a common return path for             electric current
+    - What is VBATT, 3.3V = current flow places
+    - Rest are digital pins 
+
 2. Programming Neopixels
   - What are neopixels? 
     - Needs data but how do we send it data? 
