@@ -104,4 +104,5 @@ BREAK
     - Has to involve more than one body
     - Prompt- “I have to tell you a secret”
 
-
+## References
+- Make: Wearable Electronics by Kate Hartman ([Read Online](https://proquest.safaribooksonline.com/book/electrical-engineering/9781449336769/firstchapter) via PULibrary)
