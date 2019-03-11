@@ -5,8 +5,11 @@ Introduction to wearables, sensors, and narrative
 OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participants will start by creating their own parallel circuits and transition to programming with neopixels. 
 [PRESENTATION SLIDES](https://docs.google.com/presentation/d/1wLszAbNCf_Xq_jpfsa_EkXWA_PH6H4VORgawnll-k4c/edit?usp=sharing)
 
-1. Basic circuitry 
+1. Basic circuitry
 
+ <p align="left"> 
+ <img src="https://github.com/unoseistres/INTRO-TO-WEARABLES/blob/master/images/IMG_3197.jpg" width="600">
+ </p>
   <p align="left"> 
   <img src="https://github.com/unoseistres/INTRO-TO-WEARABLES/blob/master/images/LED.png">
   </p>
