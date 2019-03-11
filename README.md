@@ -29,13 +29,20 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
           - Analog input- refers to pins that can accommodate a range of values. You can accomplish a more varied effect.
   - Output
       - Are pins where information is delivered from the microcontroller in the form of varying voltage.- LEDs, motors, and         speakers. 
+      
 3. Sewing your circuit
+  
+  <p align="center"> 
+  <img src="https://github.com/unoseistres/INTRO-TO-WEARABLES/blob/master/neopixels/flora%20neopixel%20diagrams.png" width="400">
+  </p>
+  
   - How do you sew?
     - Look out for direction
     - Sewing snaps
     - Positive and Negative connections don’t have breaks HOWEVER data connections do. 
     - Upload simple strand test
     - Arduino programming structure  
+    
 4. HOMEWORK
   - Come in with an animation
     - Blink animation ⇒ snake animation 
@@ -56,6 +63,7 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
  - Stretch sensor (2)
  - Mic
  - Capacitive touch
+
 3. Construct circuit  
  - Present back your circuits
     - What is happening in your circuit?
