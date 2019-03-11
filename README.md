@@ -7,7 +7,7 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
 
 1. Basic circuitry
 
- <p align="left"> 
+<p align="center"> 
  <img src="https://github.com/unoseistres/INTRO-TO-WEARABLES/blob/master/images/IMG_3197.jpg" width="600">
  </p>
   <p align="left"> 
