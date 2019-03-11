@@ -6,8 +6,19 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
 [PRESENTATION SLIDES](https://docs.google.com/presentation/d/1wLszAbNCf_Xq_jpfsa_EkXWA_PH6H4VORgawnll-k4c/edit?usp=sharing)
 
 1. Basic circuitry 
+
+  <p align="left"> 
+  <img src="https://github.com/unoseistres/INTRO-TO-WEARABLES/blob/master/images/LED.png">
+  </p>
+
   - LED/coin cell orientation
+
   - Create parallel switch circuit- LED, nylon fabric tape
+
+  <p align="center"> 
+  <img src="https://github.com/unoseistres/INTRO-TO-WEARABLES/blob/master/images/LED%20switch%20circuit.jpg" width="600">
+  </p>
+
     - One LED light up switch
     - Where have you seen a parallel circuit before? (christmas lights, etc)
     - Diagram on how energy flows
