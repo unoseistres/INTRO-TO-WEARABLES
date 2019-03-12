@@ -43,8 +43,8 @@ void loop() {
   amplitude = (maxReading - minReading);
 
   // print data
-  Serial.print("amplitude: ");
-  Serial.println(amplitude);
+  Serial.print(amplitude); Serial.print(" ");
+  Serial.println();
 
   // how many neopixels should be lit?
   int height = map(amplitude,0,300,0,NUMPIXELS);
@@ -58,4 +58,3 @@ void loop() {
 
   strip.show();
 }
-
