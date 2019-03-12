@@ -1,35 +1,12 @@
-#include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_LSM303_U.h>
 #include <Adafruit_NeoPixel.h>
 
-int NUMPIXELS = 5;
-int PIN = 6;
-int DELAY = 20;
-
-/* Assign a unique ID to this sensor at the same time */
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
-void displaySensorDetails(void)
-{
-  sensor_t sensor;
-  accel.getSensor(&sensor);
-  Serial.println("------------------------------------");
-  Serial.print  ("Sensor:       "); Serial.println(sensor.name);
-  Serial.print  ("Driver Ver:   "); Serial.println(sensor.version);
-  Serial.print  ("Unique ID:    "); Serial.println(sensor.sensor_id);
-  Serial.print  ("Max Value:    "); Serial.print(sensor.max_value); Serial.println(" m/s^2");
-  Serial.print  ("Min Value:    "); Serial.print(sensor.min_value); Serial.println(" m/s^2");
-  Serial.print  ("Resolution:   "); Serial.print(sensor.resolution); Serial.println(" m/s^2");
-  Serial.println("------------------------------------");
-  Serial.println("");
-  delay(500);
-}
-
-int oldValue;
-float alpha = 0.8;
-
+int NUMPIXELS = 5;
+int PIN = 6;
 
 void setup(void)
 {
@@ -44,11 +21,15 @@ void setup(void)
     while(1);
   }
 
-  /* Display some basic information on this sensor */
-  displaySensorDetails();
-
+  // initialize neopixels
   pixels.begin();
 }
+
+float x,y,z; // acceleration in 3 directions
+
+boolean smooth = true; // do you want to smooth your data?
+float oldX, oldY, oldZ;
+float smoothingFactor = 0.9;
 
 void loop(void)
 {
@@ -56,22 +37,33 @@ void loop(void)
   sensors_event_t event;
   accel.getEvent(&event);
 
+  // get values from the sensor
+  x = event.acceleration.x;
+  y = event.acceleration.y;
+  z = event.acceleration.z;
+
+  // smooth data with low pass filter algorithm
+  if (smooth) {
+    x = oldX * smoothingFactor + x * (1-smoothingFactor);
+    y = oldY * smoothingFactor + y * (1-smoothingFactor);
+    z = oldZ * smoothingFactor + z * (1-smoothingFactor);
+    
+    oldX = x;
+    oldY = y;
+    oldZ = z;
+  }
+
   /* Display the results (acceleration is measured in m/s^2) */
-  Serial.print("X: "); Serial.print(event.acceleration.x); Serial.print("  ");
-  Serial.print("Y: "); Serial.print(event.acceleration.y); Serial.print("  ");
-  Serial.print("Z: "); Serial.print(event.acceleration.z); Serial.print("  ");Serial.println("m/s^2 ");
+  Serial.print("X: "); Serial.print(x); Serial.print("  ");
+  Serial.print("Y: "); Serial.print(y); Serial.print("  ");
+  Serial.print("Z: "); Serial.print(z); Serial.print("  ");Serial.println("m/s^2 ");
 
-  /* Note: You can also get the raw (non unified values) for */
-  /* the last data sample as follows. The .getEvent call populates */
-  /* the raw values used below. */
-  //Serial.print("X Raw: "); Serial.print(accel.raw.x); Serial.print("  ");
-  //Serial.print("Y Raw: "); Serial.print(accel.raw.y); Serial.print("  ");
-  //Serial.print("Z Raw: "); Serial.print(accel.raw.z); Serial.println("");
+  /* map data to a color value */
+  int red = map(abs(y), 0, 15, 0, 200);
+  int blue = map(abs(x), 0, 15, 0, 200);
+  int green = map(abs(z), 0, 15, 0, 200);
 
-  int red = map(abs(event.acceleration.y), 0, 15, 0, 200);
-  int blue = map(abs(event.acceleration.x), 0, 15, 0, 200);
-  int green = map(abs(event.acceleration.z), 0, 15, 0, 200);
-
+  /* set all pixels to the same color */
   for(int i=0;i<NUMPIXELS;i++){
     pixels.setPixelColor(i, pixels.Color(red,green,blue));
   }
@@ -79,5 +71,5 @@ void loop(void)
   pixels.show();
 
   /* Delay before the next sample */
-  delay(DELAY);
+  delay(20);
 }
