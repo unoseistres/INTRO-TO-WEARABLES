@@ -78,7 +78,7 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
   - Go over Animation homework- Questions? Hurdles? Discoveries?
 
 ## Introduction to Sensors
-2. Each group will have a sensor to work with
+2. Construct circuit 
  - Accelerometer (2)
    - How does an accelerometer work?
    - What is it detecting?
@@ -92,25 +92,20 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
    - What is it detecting?
    - What is resistance? 
 
-3. Construct circuit  
- - Present back your circuits
-    - What is happening in your circuit?
-    - What code did you use to work with it?
-    - How is this working (in plain english)?
-
 BREAK
 
-4. Where does your sensor live on the body?
- - Examples of how to migrate your circuit  
- - What is your sensor potentially highlighting?
+4. HOMEWORK
+  - Create a 2 min max. performance
+  - No words
+  - Has to involve more than one body
+  - Prompt- “I have to tell you a secret”
+
+5. Designing your circuit 
+  - Where does your sensor live on the body?
+  - Examples of how to migrate your circuit  
+  - What is your sensor potentially highlighting?
     - What kind of gestures does your sensor invite?
     - What kind of meaning does the data have? 
-
-5. HOMEWORK
-  - Create a 2 min max. performance
-    - No words
-    - Has to involve more than one body
-    - Prompt- “I have to tell you a secret”
 
 ## References
 - Make: Wearable Electronics by Kate Hartman ([Read Online](https://proquest.safaribooksonline.com/book/electrical-engineering/9781449336769/firstchapter) via PULibrary)
