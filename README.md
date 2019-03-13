@@ -111,3 +111,5 @@ BREAK
 
 ## References
 - Make: Wearable Electronics by Kate Hartman ([Read Online](https://proquest.safaribooksonline.com/book/electrical-engineering/9781449336769/firstchapter) via PULibrary)
+- [Arduino Language Reference](https://www.arduino.cc/reference/en/)
+- Some tips on [sewing with conductive thread](https://learn.adafruit.com/conductive-thread/stitching-around-circuit-boards)
