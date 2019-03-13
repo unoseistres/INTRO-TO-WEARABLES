@@ -94,7 +94,7 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
 
 BREAK
 
-4. HOMEWORK
+4. Homework
   - Create a 2 min max. performance
   - No words
   - Has to involve more than one body
