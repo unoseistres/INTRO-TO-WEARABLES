@@ -80,23 +80,23 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
 ## Introduction to Sensors
 2. Construct circuit 
  - Accelerometer (2)
-   - How does an accelerometer work?
-   - What is it detecting?
+   - What are you measuring?
+   - What can you sense with that?
  - Stretch sensor (2)
    - What is this stretch sensor made out of?
-   - What is it detecting?
+   - What is it measuring?
  - Mic
-   - What is it detecting?
-   - How are the neopixels being animated?
+   - What is it measuring?
+   - How are you mapping unto the neopixels?
  - Capacitive touch
-   - What is it detecting?
+   - What is it measuring?
    - What is resistance? 
 
 3. Present back your circuit
 
 BREAK
 
-4. Homework
+4. Mini-challenge 
   - Create a 2 min max. performance
   - No words
   - Has to involve more than one body
