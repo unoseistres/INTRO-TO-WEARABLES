@@ -92,6 +92,8 @@ OBJECTIVE: Teach the basics of circuitry through wearable electronics. Participa
    - What is it detecting?
    - What is resistance? 
 
+3. Present back your circuit
+
 BREAK
 
 4. Homework
